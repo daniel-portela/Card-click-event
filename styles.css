@@ -1,0 +1,89 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s, background-color 0.7s;
+    cursor: pointer;
+  }
+  
+  .card img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  .card h2 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .card p {
+    font-size: 14px;
+  }
+  
+  .card .more-content {
+    display: none;
+    margin-top: 10px;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 2px rgb(0, 34, 255);
+    opacity: 0.9;
+    background-color: #d9ecff;
+    color: #000000;
+  }
+  
+  /* Estilização do botão "Leia mais" */
+  .read-more {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.6;
+  }
+  
+  .read-more:hover {
+    background-color: #0d00ff;
+    transition: 0.5s;
+  }
+  
+  
+  @media (max-width: 576px) {
+    .card {
+      max-width: 100%;
+    }
+  }
+  
+
+  @media (min-width: 577px) and (max-width: 992px) {
+    .card {
+      width: 70%
+    }
+  }
+  
